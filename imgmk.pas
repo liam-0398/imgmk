@@ -28,7 +28,7 @@ begin
 
      //transferSize := 0;
      count := size;
-     FillChar(buf,SizeOf(buf),'0');
+     FillChar(buf,SizeOf(buf),0);
      fd := fpOpen(output_filename,O_WrOnly or O_Creat or O_Trunc, 438);
         repeat
 	      if count > 0 then
